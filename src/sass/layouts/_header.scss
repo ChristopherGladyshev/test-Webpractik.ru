@@ -1,0 +1,220 @@
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 44px;
+
+    .logo{
+        img{
+            width: 100%;
+        }
+        @media (max-width: 359px) {
+            width: 100px;
+        }
+    }
+
+    main {
+        min-width: 30%;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            @include fontNormal;
+            font-weight: 800;
+            font-family: Alegreya-Black, Arial, Helvetica, sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            list-style-type: none;
+            text-transform: uppercase;
+            padding: 0;
+            margin-top: 7px;
+
+            li:hover {
+                transition: 0.3s;
+                cursor: pointer;
+                color: $BtnColorActive;
+            }
+        }
+
+        @media (max-width:1120px) {
+            display: none;
+        }
+    }
+
+    .header__container-contact {
+        display: flex;
+
+        @media (max-width: 834px) {
+            justify-content: end;
+            align-items: center;
+        }
+    }
+
+    .contacts {
+        cursor: pointer;
+        @include flex-center;
+        justify-content: space-evenly;
+        width: 246px;
+
+        .phone {
+            font-size: 2.4rem;
+            margin: 0;
+        }
+
+        .text-small {
+            margin: 5px 0px 0px;
+        }
+
+        .header__container-text {
+            @media (max-width: 834px) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 834px) {
+            width: auto;
+        }
+    }
+
+    .basket {
+        @include flex-center;
+        cursor: pointer;
+        width: 246px;
+
+        @media (max-width: 834px) and (min-width:416px){
+            width: 100px;
+            padding-right: 50px;
+        }
+        @media (max-width: 415px){
+            width: 100px;
+            padding-right: 0px;
+        }
+
+        .basket-size {
+            position: relative;
+
+            span {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                @include flex-center;
+                top: -9px;
+                right: 0;
+                font-family: Roboto-Medium, Arial, Helvetica, sans-serif;
+                font-size: 1.1rem;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.59;
+                letter-spacing: normal;
+                border-radius: 10px;
+                background-color: $BtnColor;
+                color: #fff;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: $BtnColorActive;
+                }
+            }
+        }
+
+        .header__container-text {
+            padding-left: 10px;
+
+            @media (max-width: 834px) {
+                display: none;
+            }
+        }
+
+        .text-clarification {
+            margin: 0;
+        }
+
+        .text-small {
+            margin: 5px 0px 0px;
+        }
+    }
+
+    .language {
+        cursor: pointer;
+        @include flex-center;
+        margin-right: 24px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: #eff0f1;
+        font-weight: 800;
+        font-family: Alegreya-Black, Arial, Helvetica, sans-serif;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+
+        p {
+            margin: 0px;
+        }
+        @media(max-width: 490px){
+            display: none;
+        }
+    }
+
+    .menu-icon-wrapper {
+        cursor: pointer;
+        @media(min-width: 835px){
+            display: none;
+        }
+    }
+
+    .menu-icon {
+        position: relative;
+        width: 24px;
+        height: 4px;
+        border-radius: 20px;
+        background: #111;
+    }
+
+    .menu-icon-active {
+        background: #fff;
+    }
+
+
+    .menu-icon::before {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        content: '';
+        display: block;
+        width: 24px;
+        height: 4px;
+        border-radius: 20px;
+        background: #111;
+        transition: transform 0.2s linear, top 0.2s ease-in 0.2s;
+    }
+
+    .menu-icon-active::before {
+        transform: rotate(45deg);
+        top: 0px;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+    .menu-icon::after {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        content: '';
+        display: block;
+        width: 18px;
+        height: 4px;
+        border-radius: 20px;
+        background: #111;
+        transition: transform 0.2s linear, top 0.2s ease-in 0.2s;
+    }
+
+    .menu-icon-active::after {
+        transform: rotate(-45deg);
+        width: 24px;
+        top: 0px;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+
+}

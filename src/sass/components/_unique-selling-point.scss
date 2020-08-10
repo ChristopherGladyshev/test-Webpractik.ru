@@ -1,0 +1,208 @@
+.unique-selling-point {
+    height: 600px;
+    padding-top: 50px;
+
+    @media (max-width: 1059px) and (min-width: 835px) {
+        padding-top: 0px;
+        height: 534px;
+    }
+
+    @media (max-width: 834px) and (min-width:772px) {
+        padding-top: 0px;
+        height: 400px;
+    }
+
+    @media (max-width: 771px) {
+        height: auto;
+    }
+
+    .unique-selling-point-wrapper {
+        @include flex-center;
+        justify-content: space-between;
+
+        @media (max-width: 834px) {
+            align-items: flex-start;
+        }
+
+        @media (max-width: 771px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .unique-selling-point-text {
+        max-width: 520px;
+
+        @media (max-width: 771px) and (min-width: 360px) {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 359px) {
+            margin-top: 0px;
+            text-align: center;
+        }
+
+        @media (max-width: 834px) {
+            padding-top: 30px;
+        }
+
+        h1 {
+            margin: 11px 0px 14px 0px;
+
+            @media (max-width: 940px) and (min-width: 383px) {
+                font-size: 5.2rem;
+            }
+
+            @media (max-width: 382px) {
+                font-size: 4.2rem;
+            }
+        }
+
+        p {
+            @include bigText;
+            margin: 0px 0px 44px 0px;
+        }
+    }
+
+
+
+    .unique-selling-point__order {
+        width: 304px;
+        height: 60px;
+    }
+
+    .unique-selling-point-img:nth-child(2) {
+        @media (max-width: 771px) {
+            order: -1;
+        }
+
+    }
+
+    .unique-selling-point-img {
+        position: relative;
+        width: 52%;
+        height: 600px;
+
+
+
+        @media (max-width: 1360px) and (min-width: 835px) {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 52%;
+            align-items: center;
+            height: 600px;
+        }
+
+        @media (max-width: 834px) and (min-width: 772px) {
+            height: 470px;
+            width: 87%;
+        }
+
+        @media (max-width: 771px) {
+            height: 200px;
+        }
+
+        img {
+            position: absolute;
+
+            &:last-child {
+                bottom: 0px;
+                left: -30px;
+                width: 51%;
+
+                @media (max-width: 1486px) and (min-width: 1060px) {
+                    width: 38%;
+                    left: 0;
+                    top: 44%;
+                }
+
+                @media (max-width: 1060px) and (min-width: 1025px) {
+                    width: 38%;
+                    left: 0;
+                    top: 61%;
+                }
+
+                @media (max-width: 1024px) and (min-width: 835px) {
+                    width: 38%;
+                    left: 0;
+                    top: 55%;
+                }
+
+                @media (max-width: 834px) and (min-width: 360px) {
+                    top: 40%;
+                    left: -16px;
+                }
+
+                @media(max-width: 359px) {
+                    width: 100px;
+                    left: -68px;
+                    top: 74%;
+                }
+
+            }
+        }
+
+        .pizza {
+            width: 100%;
+            right: 0;
+            top: 0;
+            z-index: 999;
+
+            @media (max-width: 1486px) and(min-width: 1059px) {
+                width: 84%;
+                left: 0;
+            }
+
+            @media (max-width: 1060px) and (min-width: 835px) {
+                top: 22%;
+            }
+
+            @media (max-width: 834px) and(min-width: 772px) {
+                top: 5%;
+            }
+
+            @media (max-width: 771px) and (min-width: 360px) {
+                top: 0px;
+                width: 300px;
+            }
+
+            @media(max-width: 359px) {
+                width: 241px;
+            }
+        }
+    }
+
+    .bg-pizza {
+        position: relative;
+
+        img {
+            width: 50%;
+            position: absolute;
+            z-index: -5;
+            right: 0;
+            top: -561px;
+
+            @media (max-width: 1060px) and (min-width: 772px) {
+                top: -400px;
+            }
+
+            @media (max-width: 771px) and (min-width: 420px) {
+                width: 300px;
+                top: -475px;
+            }
+
+            @media (max-width: 418px) and (min-width: 360px) {
+                width: 300px;
+                top: -500px;
+            }
+
+            @media (max-width: 359px) {
+                width: 300px;
+                top: -452px;
+            }
+        }
+    }
+}

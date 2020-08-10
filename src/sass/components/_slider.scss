@@ -1,0 +1,37 @@
+.wrapper__slider {
+    @include flex-center;
+    justify-content: space-between;
+    padding-top: 100px;
+    flex-wrap: wrap;
+
+    @media (max-width:1278px) {
+        justify-content: center;
+    }
+
+    @media (max-width: 1456px){
+        padding-top: 0px;
+    }
+    
+    @media (max-width: 1058px){
+        padding-top: 100px;
+    }
+
+    @media(max-width: 960px) {
+        padding-top: 10px;
+    }
+}
+
+
+
+.card__slider {
+    padding: 5px;
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    p {
+        @include normalText;
+    }
+}

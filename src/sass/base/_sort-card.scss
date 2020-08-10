@@ -1,0 +1,52 @@
+.sort-card {
+    width: 100%;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    nav {
+        @include flex-center;
+
+        ul {
+            padding: 0;
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            text-transform: uppercase;
+            @include fontNormal;
+            font-weight: 800;
+            font-family: Alegreya-Black, Arial, Helvetica, sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+
+            li {
+                position: relative;
+                cursor: pointer;
+                text-align: center;
+
+                img {
+                    opacity: 0;
+                    position: absolute;
+                    top: -50px;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    transition: 0.3s;
+                }
+                &:hover{
+                    color: $BtnColorActive;
+                }
+
+                &:hover img {
+                    opacity: 1;
+
+                }
+            }
+        }
+    }
+}

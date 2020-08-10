@@ -1,0 +1,150 @@
+.card {
+    margin-top: 30px;
+    width: 304px;
+    height: 540px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(165, 169, 176, 0.3);
+
+    .pizza__wrapper {
+        padding: 30px 40px 0px 40px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 220px;
+
+        .pizza {
+            width: 140px;
+            height: 140px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .big {
+            width: 228px;
+            height: 228px;
+        }
+
+        .average {
+            width: 175px;
+            height: 174px;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: -1;
+            width: 200px;
+            height: 200px;
+            border: 1px dashed #dcdfe2;
+            border-radius: 50%;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: -1;
+            width: 155px;
+            height: 155px;
+            border: 1px dashed #dcdfe2;
+            border-radius: 50%;
+        }
+    }
+
+    .card__description {
+        text-align: center;
+
+        h3 {
+            font-family: Alegreya-Black, Arial, Helvetica, sans-serif;
+            margin: 9px 0px 0px 0px;
+            font-family: Alegreya;
+            font-size: 24px;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+        }
+
+        p {
+            margin: 4px 13px 0;
+            font-family: Roboto-Black, Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: center;
+            color: $additionalText;
+        }
+
+        .card__size__pizze {
+            margin: 8px 13px 0;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card__btn__size {
+            margin: 5px;
+            width: 182px;
+            height: 32px;
+            border-radius: 4px;
+            background-color: #eff0f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                border: none;
+                outline: none;
+                cursor: pointer;
+                width: 58px;
+                height: 28px;
+                font-family: Roboto-Medium, Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: center;
+                transition: 0.5s;
+
+                &:hover {
+                    border-radius: 2px;
+                    background-color: #ffffff;
+                }
+            }
+
+            .active {
+                width: 58px;
+                height: 28px;
+                border-radius: 2px;
+                background-color: #ffffff;
+            }
+        }
+    }
+
+    .price {
+        font-family: Roboto-Bold;
+        font-size: 24px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+
+        p {
+            margin: 0px;
+            padding: 7px 0px 12px;
+        }
+    }
+}

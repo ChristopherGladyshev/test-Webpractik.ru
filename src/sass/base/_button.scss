@@ -1,0 +1,19 @@
+.order {
+    width: 240px;
+    height: 52px;
+    border-radius: 5px;
+    background: $BtnColor;
+    font-family: Alegreya-Black, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+        background: $BtnColorActive;
+    }
+}

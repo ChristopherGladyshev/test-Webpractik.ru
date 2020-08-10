@@ -1,0 +1,56 @@
+$transition-duration: 0.25s;
+
+
+.checkbox-seven {
+    position: relative;
+    display: block;
+    width: 58px;
+    height: 28px;
+  
+    input {
+      display: none;
+  
+      &:checked + .track {
+        background-color: #444444;
+      }
+      &:checked + .track:before {
+        transform: translateX(28px) rotate(90deg);
+        background-image: url("https://i.postimg.cc/0yJdbxRY/night.png");
+        background-size: cover;
+        background-color: #1d1c1c;
+      }
+    }
+  
+    .track {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #444444;
+      transition: $transition-duration;
+  
+      &:before {
+        content: "";
+        position: absolute;
+        transition: $transition-duration;
+      }
+    }
+  
+    .thumb {
+      border-radius: 35px;
+      background-color: #bbe1f0;
+  
+      &:before {
+        top: -1px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #ffae4d;
+        background-image: url("https://i.postimg.cc/T2CcsCJD/day.png");
+        background-size: cover;
+      }
+    }
+  }
+  

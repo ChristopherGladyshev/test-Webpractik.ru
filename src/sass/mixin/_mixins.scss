@@ -1,0 +1,35 @@
+@mixin roboto-regular {
+    font-family: Roboto-Regular, Arial, Helvetica, sans-serif;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin fontNormal {
+    font-stretch: normal;
+    font-style: normal;
+}
+
+@mixin bigText {
+    @include roboto-regular;
+    font-size: 2.4rem;
+    font-weight: normal;
+}
+
+@mixin normalText {
+    @include roboto-regular;
+    font-size: 1.4rem;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+@mixin smallText {
+    @include roboto-regular;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    color: $additionalText;
+}

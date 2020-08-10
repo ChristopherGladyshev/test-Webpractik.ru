@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Canvas" />
+    <meta name="author" lang="ru" content="Alexander Panov" />
+    <title>English-for-kids</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-ico">
+</head>
+
+<body id="body">
+    <header>
+        <div class="wrapper header__wrapper">
+            <div class="logo">
+                <img src="./img/header/logo.svg" alt="">
+            </div>
+            <main>
+                <nav>
+                    <ul>
+                        <li>меню</li>
+                        <li>О нас</li>
+                        <li>контакты</li>
+                    </ul>
+                </nav>
+            </main>
+            <div class="header__container-contact">
+                <div class="contacts">
+                    <img src="./img/header/telephone.svg" alt="">
+                    <div class="header__container-text">
+                        <p class="text-clarification phone">+7 (918) 432-65-87</p>
+                        <p class="text-small">Ежедневно с 9:00 до 23:00</p>
+                    </div>
+                </div>
+                <div class="basket">
+                    <div class="basket-size">
+                        <img src="./img/header/cart.svg" alt="">
+                        <span>3</span>
+                    </div>
+                    <div class="header__container-text">
+                        <p class="text-clarification">Ваш заказ</p>
+                        <p class="text-small">Итальянская и ещё 2 пиццы </p>
+                    </div>
+                </div>
+                <div class="language">
+                    <p>RU</p>
+                </div>
+                <div class="menu-icon-wrapper">
+                    <div class="menu-icon"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="unique-selling-point">
+        <div class="wrapper unique-selling-point-wrapper">
+            <div class="unique-selling-point-text">
+                <h1>Пицца на заказ</h1>
+                <p class="text">Бесплатная и быстрая доставка за час в любое удобное для вас время</p>
+                <button class="order unique-selling-point__order">Выбрать пиццу</button>
+            </div>
+            <div class="unique-selling-point-img">
+                <img class="pizza" src="./img/unique-selling-point/img-pizza.png" alt="pizza">
+                <img src="./img/unique-selling-point/img-leaves.png" alt="">
+            </div>
+        </div>
+        <div class="bg-pizza">
+            <img src="./img/unique-selling-point/img-bg.png" alt="bg.png">
+        </div>
+    </section>
+    <section>
+        <div class="wrapper wrapper__slider">
+            <div class="card__slider">
+                <a href="#">
+                    <img src="./img/slider/event-1.png" alt="">
+                    <h4>Закажи 2 пиццы – 3-я в подарок</h4>
+                    <p>При заказе 2-х больших пицц – средняя пицца в подарок</p>
+                </a>
+            </div>
+            <div class="card__slider">
+                <img src="./img/slider/event-2.png" alt="">
+                <h4>Напиток в подарок</h4>
+                <p>Скидка на заказ от 3 000 рублей + напиток в подарок</p>
+            </div>
+            <div class="card__slider">
+                <img src="./img/slider/event-3.png" alt="">
+                <h4>25% при первом заказе</h4>
+                <p>Скидка новым клиентам!</p>
+            </div>
+        </div>
+    </section>
+    <section style="height: 100vh;">
+        <div class="wrapper wrapper__card-pizza">
+            <div class="sort-card">
+                <h2>Выберите пиццу</h2>
+                <nav>
+                    <ul>
+                        <li>Все <img src="./img/sort-card/all.svg" alt="all"></li>
+                        <li>Острые <img src="./img/sort-card/hot.svg" alt="hot"></li>
+                        <li>Мясные <img src="./img/sort-card/beaf.svg" alt="beaf"></li>
+                        <li>Сырные <img src="./img/sort-card/cheese.svg" alt="cheese"></li>
+                        <li>Веганские <img src="./img/sort-card/vegetable.svg" alt="vegetable"></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="card">
+                <div class="pizza__wrapper">
+                    <img class="pizza" src="./img/pizza-01@2x.png" alt="">
+                </div>
+                <div class="card__description">
+                    <h3>Итальянская</h3>
+                    <p>Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</p>
+                    <p class="card__size__pizze">Размер, см:</p>
+                </div>
+                <div class="wrapper">
+                    <div class="card__btn__size">
+                        <button class="active">20</button>
+                        <button class="btnCard">30</button>
+                        <button class="btnCard">40</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>от 399 руб.</p>
+                </div>
+                <div class="wrapper">
+                    <button class="order">Заказать</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pizza__wrapper">
+                    <img class="pizza" src="./img/pizza-01@2x.png" alt="">
+                </div>
+                <div class="card__description">
+                    <h3>Итальянская</h3>
+                    <p>Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</p>
+                    <p class="card__size__pizze">Размер, см:</p>
+                </div>
+                <div class="wrapper">
+                    <div class="card__btn__size">
+                        <button class="btnCard active">20</button>
+                        <button class="btnCard">30</button>
+                        <button class="btnCard">40</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>от 399 руб.</p>
+                </div>
+                <div class="wrapper">
+                    <button class="order">Заказать</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pizza__wrapper">
+                    <img class="pizza" src="./img/pizza-01@2x.png" alt="">
+                </div>
+                <div class="card__description">
+                    <h3>Итальянская</h3>
+                    <p>Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</p>
+                    <p class="card__size__pizze">Размер, см:</p>
+                </div>
+                <div class="wrapper">
+                    <div class="card__btn__size">
+                        <button class="btnCard active">20</button>
+                        <button class="btnCard">30</button>
+                        <button class="btnCard">40</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>от 399 руб.</p>
+                </div>
+                <div class="wrapper">
+                    <button class="order">Заказать</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pizza__wrapper">
+                    <img class="pizza" src="./img/pizza-01@2x.png" alt="">
+                </div>
+                <div class="card__description">
+                    <h3>Итальянская</h3>
+                    <p>Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</p>
+                    <p class="card__size__pizze">Размер, см:</p>
+                </div>
+                <div class="wrapper">
+                    <div class="card__btn__size">
+                        <button class="btnCard active">20</button>
+                        <button class="btnCard">30</button>
+                        <button class="btnCard">40</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>от 399 руб.</p>
+                </div>
+                <div class="wrapper">
+                    <button class="order">Заказать</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pizza__wrapper">
+                    <img class="pizza" src="./img/pizza-01@2x.png" alt="">
+                </div>
+                <div class="card__description">
+                    <h3>Итальянская</h3>
+                    <p>Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</p>
+                    <p class="card__size__pizze">Размер, см:</p>
+                </div>
+                <div class="wrapper">
+                    <div class="card__btn__size">
+                        <button class="active">20</button>
+                        <button class="btnCard">30</button>
+                        <button class="btnCard">40</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>от 399 руб.</p>
+                </div>
+                <div class="wrapper">
+                    <button class="order">Заказать</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pizza__wrapper">
+                    <img class="pizza" src="./img/pizza-01@2x.png" alt="">
+                </div>
+                <div class="card__description">
+                    <h3>Итальянская</h3>
+                    <p>Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</p>
+                    <p class="card__size__pizze">Размер, см:</p>
+                </div>
+                <div class="wrapper">
+                    <div class="card__btn__size">
+                        <button class="btnCard active">20</button>
+                        <button class="btnCard">30</button>
+                        <button class="btnCard">40</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>от 399 руб.</p>
+                </div>
+                <div class="wrapper">
+                    <button class="order">Заказать</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pizza__wrapper">
+                    <img class="pizza" src="./img/pizza-01@2x.png" alt="">
+                </div>
+                <div class="card__description">
+                    <h3>Итальянская</h3>
+                    <p>Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</p>
+                    <p class="card__size__pizze">Размер, см:</p>
+                </div>
+                <div class="wrapper">
+                    <div class="card__btn__size">
+                        <button class="btnCard active">20</button>
+                        <button class="btnCard">30</button>
+                        <button class="btnCard">40</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>от 399 руб.</p>
+                </div>
+                <div class="wrapper">
+                    <button class="order">Заказать</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pizza__wrapper">
+                    <img class="pizza" src="./img/pizza-01@2x.png" alt="">
+                </div>
+                <div class="card__description">
+                    <h3>Итальянская</h3>
+                    <p>Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</p>
+                    <p class="card__size__pizze">Размер, см:</p>
+                </div>
+                <div class="wrapper">
+                    <div class="card__btn__size">
+                        <button class="btnCard active">20</button>
+                        <button class="btnCard">30</button>
+                        <button class="btnCard">40</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>от 399 руб.</p>
+                </div>
+                <div class="wrapper">
+                    <button class="order">Заказать</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pizza__wrapper">
+                    <img class="pizza" src="./img/pizza-01@2x.png" alt="">
+                </div>
+                <div class="card__description">
+                    <h3>Итальянская</h3>
+                    <p>Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</p>
+                    <p class="card__size__pizze">Размер, см:</p>
+                </div>
+                <div class="wrapper">
+                    <div class="card__btn__size">
+                        <button class="active">20</button>
+                        <button class="btnCard">30</button>
+                        <button class="btnCard">40</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>от 399 руб.</p>
+                </div>
+                <div class="wrapper">
+                    <button class="order">Заказать</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pizza__wrapper">
+                    <img class="pizza" src="./img/pizza-01@2x.png" alt="">
+                </div>
+                <div class="card__description">
+                    <h3>Итальянская</h3>
+                    <p>Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</p>
+                    <p class="card__size__pizze">Размер, см:</p>
+                </div>
+                <div class="wrapper">
+                    <div class="card__btn__size">
+                        <button class="btnCard active">20</button>
+                        <button class="btnCard">30</button>
+                        <button class="btnCard">40</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>от 399 руб.</p>
+                </div>
+                <div class="wrapper">
+                    <button class="order">Заказать</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pizza__wrapper">
+                    <img class="pizza" src="./img/pizza-01@2x.png" alt="">
+                </div>
+                <div class="card__description">
+                    <h3>Итальянская</h3>
+                    <p>Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</p>
+                    <p class="card__size__pizze">Размер, см:</p>
+                </div>
+                <div class="wrapper">
+                    <div class="card__btn__size">
+                        <button class="btnCard active">20</button>
+                        <button class="btnCard">30</button>
+                        <button class="btnCard">40</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>от 399 руб.</p>
+                </div>
+                <div class="wrapper">
+                    <button class="order">Заказать</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pizza__wrapper">
+                    <img class="pizza" src="./img/pizza-01@2x.png" alt="">
+                </div>
+                <div class="card__description">
+                    <h3>Итальянская</h3>
+                    <p>Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</p>
+                    <p class="card__size__pizze">Размер, см:</p>
+                </div>
+                <div class="wrapper">
+                    <div class="card__btn__size">
+                        <button class="btnCard active">20</button>
+                        <button class="btnCard">30</button>
+                        <button class="btnCard">40</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>от 399 руб.</p>
+                </div>
+                <div class="wrapper">
+                    <button class="order">Заказать</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <!-- <div class="card">
+            <div class="pizza__wrapper">
+                <img class="pizza" src="./img/pizza-01@2x.png" alt="">
+            </div>
+            <div class="card__description">
+                <h3>Итальянская</h3>
+                <p>Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик</p>
+                <p class="card__size__pizze">Размер, см:</p>
+            </div>
+            <div class="wrapper">
+                <div class="card__btn__size">
+                    <button class="active">20</button>
+                    <button>30</button>
+                    <button>40</button>
+                </div>
+            </div>
+            <div class="price">
+                <p>от 399 руб.</p>
+            </div>
+            <div class="wrapper">
+                <button class="order">Заказать</button>
+            </div>
+        </div> -->
+
+</body>
+
+</html>
