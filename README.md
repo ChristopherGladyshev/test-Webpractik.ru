@@ -1,5 +1,5 @@
 # full
-full linc tasc: [full linc tasc](https://web-mralderson.github.io/test-Webpractik.ru/)
+full linc tasc: [https://web-mralderson.github.io/test-Webpractik.ru/]()
 
 
 Для старта
