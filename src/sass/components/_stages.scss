@@ -1,0 +1,28 @@
+.stages-section{
+    margin-top: 50px;
+    background: $acquiring;
+}
+
+.stages__wrapper-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 765px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+.stages {
+    text-align: center;
+
+    @media (max-width: 834px) and (min-width: 572px) {
+        text-align: start;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

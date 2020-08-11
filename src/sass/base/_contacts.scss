@@ -1,0 +1,25 @@
+.contacts {
+    cursor: pointer;
+    @include flex-center;
+    justify-content: space-evenly;
+    width: 246px;
+
+    .phone {
+        font-size: 2.4rem;
+        margin: 0;
+    }
+
+    .text-small {
+        margin: 5px 0px 0px;
+    }
+
+    .header__container-text {
+        @media (max-width: 834px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 834px) {
+        width: auto;
+    }
+}

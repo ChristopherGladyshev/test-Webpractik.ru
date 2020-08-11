@@ -8,17 +8,18 @@
         justify-content: center;
     }
 
-    @media (max-width: 1456px){
+    @media (max-width: 1456px) {
         padding-top: 0px;
     }
-    
-    @media (max-width: 1058px){
+
+    @media (max-width: 1058px) {
         padding-top: 100px;
     }
 
     @media(max-width: 960px) {
         padding-top: 10px;
     }
+
 }
 
 
@@ -26,9 +27,23 @@
 .card__slider {
     padding: 5px;
 
+    @media (max-width: 470px) {
+        text-align: center;
+    }
+
+    img {
+        @media (max-width: 470px) {
+            width: 290px;
+        }
+    }
+
     a {
         color: #000;
         text-decoration: none;
+
+        @media (max-width: 470px) {
+            text-align: center;
+        }
     }
 
     p {

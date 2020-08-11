@@ -12,8 +12,8 @@
         ul {
             padding: 0;
             display: flex;
-            width: 50%;
-            justify-content: space-between;
+            width: 100%;
+            justify-content: center;
             align-items: center;
             list-style-type: none;
             text-transform: uppercase;
@@ -23,10 +23,21 @@
             font-size: 1.8rem;
             letter-spacing: 1px;
 
+            .active {
+                color: $BtnColorActive;
+            }
+
             li {
                 position: relative;
                 cursor: pointer;
                 text-align: center;
+                padding: 10px;
+
+                span {
+                    @media (max-width: 520px) {
+                        display: none;
+                    }
+                }
 
                 img {
                     opacity: 0;
@@ -37,14 +48,28 @@
                     right: 0;
                     margin: auto;
                     transition: 0.3s;
+
+                    @media (max-width: 520px) and (min-width: 341px) {
+                        opacity: 1;
+                        position: relative;
+                        padding: 10px;
+
+                        :hover {
+                            fill: #111 !important;
+                        }
+                    }
+                    @media (max-width: 340px){
+                        padding: 3px;
+                    }
+
                 }
-                &:hover{
+
+                &:hover {
                     color: $BtnColorActive;
                 }
 
                 &:hover img {
                     opacity: 1;
-
                 }
             }
         }

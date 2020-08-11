@@ -1,0 +1,21 @@
+.sction__about-us {
+    position: relative;
+    text-align: center;
+
+    h4 {
+        color: $additionalText;
+    }
+}
+
+.about-us {
+    width: 100%;
+
+    .about-us-img {
+        display: flex;
+        width: 100%;
+
+        img {
+            width: 20%;
+        }
+    }
+}
