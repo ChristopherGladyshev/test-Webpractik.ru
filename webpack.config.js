@@ -3,6 +3,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 const ENV = process.env.npm_lifecycle_event;
 const isDev = ENV === 'dev';
@@ -26,7 +27,9 @@ function setDMode() {
 
 const config = {
   target: "web",
-  entry: {index: './src/js/index.js'},
+  entry: {
+    index: './src/js/index.js'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
@@ -45,7 +48,7 @@ const config = {
       },
       {
         test: /\.js$/,
-        use: ['babel-loader'/* , 'eslint-loader' */],
+        use: ['babel-loader' /* , 'eslint-loader' */ ],
         exclude: [
           /node_modules/
         ]
@@ -62,7 +65,12 @@ const config = {
             }
           }, {
             loader: 'postcss-loader',
-            options: { sourceMap: true, config: { path: './postcss.config.js' } }
+            options: {
+              sourceMap: true,
+              config: {
+                path: './postcss.config.js'
+              }
+            }
           }
         ]
       },
@@ -78,8 +86,26 @@ const config = {
             }
           }, {
             loader: 'postcss-loader',
-            options: { sourceMap: true, config: { path: './postcss.config.js' } }
-          }, {
+            options: {
+              sourceMap: true,
+              config: {
+                path: './postcss.config.js'
+              }
+            }
+          },
+
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                autoprefixer({
+                  overrideBrowserslist: ['ie >= 8', 'last 4 version']
+                })
+              ],
+              sourceMap: true
+            }
+          },
+          {
             loader: 'sass-loader',
             options: {
               sourceMap: true
@@ -89,17 +115,17 @@ const config = {
       },
       {
         test: /\.(jpg|png|svg|gif)$/,
-        use: [
-          {
+        use: [{
             loader: 'file-loader',
             options: {
               outputPath: 'img',
               name: './[name].[ext]'
-            }},
+            }
+          },
           {
             loader: 'image-webpack-loader',
             options: {
-              bypassOnDebug : true,
+              bypassOnDebug: true,
               mozjpeg: {
                 progressive: true,
                 quality: 75

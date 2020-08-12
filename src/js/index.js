@@ -1,6 +1,7 @@
 import '../sass/style.css';
 import '../sass/style.scss';
 import './burger';
+import './create-card';
 import {
     cardPizzaSize
 } from "./card-pizza";
@@ -12,9 +13,11 @@ import {
 
 
 
+
 const body = document.getElementById('body');
 const header = document.querySelector('.header__wrapper');
 const burgerScroll = document.querySelector('.menu-icon-wrapper');
+
 
 body.addEventListener('click', (event) => {
     searchCard.searchCard(event);

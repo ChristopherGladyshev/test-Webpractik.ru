@@ -38,7 +38,7 @@ export const searchCard = {
         else if (event.target.innerText === 'ВЕГАНСКИЕ') {
             event.target.classList.add('active');
             card__pizee.forEach(element => {
-                if (element.getAttribute('data-sort') !== 'hot') {
+                if (element.getAttribute('data-sort') !== 'vegetable') {
                     element.classList.add('hidden')
                 }else element.classList.remove('hidden')
             });
