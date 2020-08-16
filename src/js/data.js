@@ -4,7 +4,7 @@ export const data = [{
         name: "Итальянская",
         description: "Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик",
         price: '699',
-
+        id: 1,
     },
     {
         dataSort: 'cheese',
@@ -12,6 +12,7 @@ export const data = [{
         name: "Маргарита",
         description: "Тесто со шпинатом, молодой сыр и колбаски, много колбасок",
         price: '479',
+        id: 2
     },
     {
         dataSort: 'cheese',
@@ -19,6 +20,7 @@ export const data = [{
         name: "Барбекю",
         description: "Циплёнок (маленький кура), оливки, моцарелла, соус барбекю",
         price: '699',
+        id: 3,
     },
     {
         dataSort: 'cheese',
@@ -26,6 +28,7 @@ export const data = [{
         name: "Вегетарианская",
         description: "Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик",
         price: '399',
+        id: 4,
     },
     {
         dataSort: 'cheese',
@@ -33,6 +36,7 @@ export const data = [{
         name: "Мясная",
         description: "Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик",
         price: '699',
+        id: 5,
     },
     {
         dataSort: 'vegetable',
@@ -40,6 +44,7 @@ export const data = [{
         name: "Овощная",
         description: "Тесто со шпинатом, молодой сыр и колбаски, много колбасок",
         price: '479',
+        id: 6,
     },
     {
         dataSort: 'vegetable',
@@ -47,6 +52,7 @@ export const data = [{
         name: "Римская",
         description: "Циплёнок (маленький кура), оливки, моцарелла, соус барбекю",
         price: '699',
+        id: 7,
     },
     {
         dataSort: 'vegetable',
@@ -54,6 +60,7 @@ export const data = [{
         name: "С грибами",
         description: "Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик",
         price: '399',
+        id: 8,
     },
     {
         dataSort: 'hot',
@@ -61,6 +68,7 @@ export const data = [{
         name: "Сырная",
         description: "Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик",
         price: '699',
+        id: 9,
     },
     {
         dataSort: 'hot',
@@ -68,6 +76,7 @@ export const data = [{
         name: "Четыре сыра",
         description: "Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик",
         price: '699',
+        id: 10,
     },
     {
         dataSort: 'hot',
@@ -75,6 +84,7 @@ export const data = [{
         name: "Пепперони Фреш с томатами",
         description: "Циплёнок (маленький кура), оливки, моцарелла, соус барбекю",
         price: '699',
+        id: 11,
     },
     {
         dataSort: 'hot',
@@ -82,5 +92,6 @@ export const data = [{
         name: "Ветчина и сыр",
         description: "Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик",
         price: '699',
+        id: 12,
     },
 ]

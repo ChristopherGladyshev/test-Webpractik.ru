@@ -54,7 +54,7 @@
                     </div>
                     <div class="basket">
                         <div class="basket-size">
-                            <img src="./img/header/cart.svg" alt="">
+                            <img src="./img/header/cart.svg" alt="" data-openModal="openModal">
                             <span>3</span>
                         </div>
                         <div class="header__container-text">
@@ -258,13 +258,13 @@
 
 
     <div class="modal">
-        <div class="modal-window">
+        <div class="modal-window" id="modalButtonClose">
             <div class="modal__header">
                 <div>
                     <h3>Ваш заказ</h3>
                 </div>
                 <div>
-                    <button>
+                    <button class="closeModal">
                         &#10006;
                     </button>
                 </div>
@@ -284,9 +284,9 @@
                 </div>
                 <div>
                     <div class="quantity-block">
-                        <button class="quantity-arrow-minus"><span>-</span></button>
+                        <button class="quantity-arrow-minus" data-price-item="555" data-calculate="minus"><span>-</span></button>
                         <input class="quantity-num" type="number" value="1" />
-                        <button class="quantity-arrow-plus">+</button>
+                        <button class="quantity-arrow-plus" data-price-item="555" data-calculate="plus">+</button>
                     </div>
                 </div>
                 <div>

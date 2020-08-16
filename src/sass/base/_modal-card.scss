@@ -32,6 +32,7 @@
         width: 24px;
         height: 24px;
         vertical-align: middle;
+        padding: 0;
 
         &:focus {
             outline: none;
@@ -39,7 +40,7 @@
 
         span {
             position: relative;
-            top: -2px;
+            z-index: -9;
         }
     }
 

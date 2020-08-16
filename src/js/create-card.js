@@ -8,10 +8,10 @@ export const CreateCard = {
     CreateCard: function (data, parent) {
         let el = '';
         data.forEach(element => {
-            el += ` <div class="card__pizee" data-sort="${element.dataSort}">
-                                    <img class="icon__card" src="./img/${element.dataSort}.svg" alt="all">
+            el += ` <div class="card__pizee" id="${element.id}" data-sort="${element.dataSort}">
+                                    <img class="icon__card" src="img/${element.dataSort}.svg" alt="all">
                                     <div class="pizza__wrapper">
-                                        <img class="pizza" src="./img/${element.img}" alt="pizza">
+                                        <img class="pizza" src="img/${element.img}" alt="pizza">
                                     </div>
                                     <div class="card__description">
                                         <h3>${element.name}</h3>
@@ -32,7 +32,7 @@ export const CreateCard = {
                                             <p>от ${element.price} руб.</p>
                                         </div>
                                         <div class="container__card">
-                                            <button class="order">Заказать</button>
+                                            <button class="order" data-openModal="openModal">Заказать</button>
                                         </div>
                                     </div>
                             </div>`
